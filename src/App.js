@@ -7,7 +7,7 @@ import MainDetails from "./components/MainDetails";
 import ClientsDetails from "./components/ClientsDetails";
 import Dates from "./components/Dates";
 import TableForm from "./components/TableForm";
-function App() {
+function App() { 
 
   const [showInvoice, setshowInvoice] = useState(false)
 
@@ -156,7 +156,7 @@ function App() {
                     <input type="text" name="ifsc" id="ifsc" placeholder="Enter your IFSC code"
                       autoComplete="off"
                       value={ifsc}
-                      onChange={(e) => setIfsc(e.target.value)}what if you want to make a webapp an then every fucking people are stoping you from making that webapp will you able to make it or youll just leave it a
+                      onChange={(e) => setIfsc(e.target.value)}
                     />
                   </div>
                 </article>
@@ -240,7 +240,6 @@ function App() {
                 {/* This is our table form */}
                 <article>
                   <TableForm
-                  // sn={sn} setSn={setSn}
                   product={product} setProduct={setProduct}
                   hsn={hsn} setHsn={setHsn}
                   qty={qty} setQty={setQty}
@@ -252,8 +251,6 @@ function App() {
                   total={total} setTotal={setTotal}
                   list={list} setList={setList}
                   />
-                  
-
                   
                 </article>
 
